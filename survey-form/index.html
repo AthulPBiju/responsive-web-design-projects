@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">STUDENT FEEDBACK</h1>
+    <p id="description">APS wants you to fill out this form.</p>
+    <form id="survey-form" method="post" action="https://feedback.aps.org">
+    <fieldset>
+      <label for="Student name" id="name-label">Enter your Name: <input id="name" name="student-name" type="text" placeholder="student-name" required/></label>
+      <label for="Student email" id="email-label">Enter your email: <input id="email" name="student-email" type="email" placeholder="student@gmail.com" required/></label>
+      <label for="number" id="number-label">Enter your admission number: <input id="number" name="admission-number" type="number" min="1" max="99999" placeholder="00000" required/></label>
+    </fieldset>
+    <fieldset>
+      <legend>Syllabus (State/ICSE)</legend>
+      <label for="State"><input id="State" type="radio" name="syllabus" value="option1" class="inline" checked /> State</label>
+      <label for="ICSE"><input id="ICSE" type="radio" name="syllabus" value="option2" class="inline" /> ICSE</label>
+    </fieldset>
+    <fieldset>
+      <label for="Class">Which class are you studying?
+        <select id="dropdown" name="Class">
+          <option value="">Choose your class</option>
+          <option value="1">Pre-KG</option>
+          <option value="2">LP (1 to 5)</option>
+          <option value="3">UP (6 to 8)</option>
+          <option value="4">HS (9 to 12)</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="Feedback">Provide your feedback: <textarea id="Feedback" name="Feedback" rows="9" cols="33" placeholder="Type here..."></textarea></label>
+    </fieldset>
+    <label for="terms-and-conditions1">
+        <input class="inline" id="terms-and-conditions1" type="checkbox" required name="terms-and-conditions1" value="1"/> I accept that its a genuine feedback</a>
+      </label>
+      <label for="terms-and-conditions2">
+        <input class="inline" id="terms-and-conditions2" type="checkbox" required name="terms-and-conditions2" value="2"/> I am ready to face all the consequences if illegal language is used</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

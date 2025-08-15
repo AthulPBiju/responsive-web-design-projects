@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+  #navbar {
+    width: 100%;
+  }
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: #f0f0f0;
+}
+nav {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px 0;
+}
+nav ul li a:hover {
+  color: #007bff;
+}
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+section {
+  margin-bottom: 20px;
+}
+h1 {
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
